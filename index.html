@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Горе от ума</title>
+  <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.theme.min.css">
+  <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+  <script src="libs/jquery-ui/jquery-ui.min.js"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  html,body{margin:0px;}
+  header{background-color:#963100;
+         height:60px;color: white;
+         display: flex;
+         align-items: center;
+         font-family: 'Roboto', sans-serif;
+         font-size: 20px;
+         }
+  header ul{margin: 0px;
+            padding: 0px;
+            width: 100%;
+            list-style: none;
+            display: flex;flex-direction: row;
+            justify-content:flex-start;
+          }
+  header ul li {cursor: pointer; margin-left: 15px;}
+  main{background-color:#cb8b62;position:absolute;top:60px;width:100%;
+       height: calc(100% - 60px);box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.51);
+       color: #fff9a1;}
+  main h2{text-align: center;}
+  </style>
+</head>
+
+<body>
+
+  <header>
+   <ul>
+    <li id="biography">Биография</li>
+    <li id="artwork">Произведение</li>
+    <li id="culture">Культура</li>
+    <li id="age">Эпоха</li>
+    <li id="art">Живопись</li>
+    <li id="music">Музыка</li>
+    <li id="test">Тест</li>
+   </ul>
+  </header>
+
+  <main>
+  <h2>Текст</h2>
+  </main>
+
+</body>
+
+<script src="scripts/browser_search.jq.js"></script>
+<script src="scripts/main_buttons.jq.js"></script>
+
+</html>
