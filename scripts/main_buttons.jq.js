@@ -8,7 +8,7 @@ $("head style").append('.hor_div ul li{margin:8px;padding:8px;background-color:#
 
 $("#artwork").on("click",function(){
   if (open != true) {
-  $("body").append('<div class="hor_div bighp"><ul class=".hor_menu"><li>История создания</li><li>Персонажи</li></ul></div>');
+  $("body").append('<div class="hor_div bighp"><ul class=".hor_menu"><a href="#plot"><li>История создания</li></a><a href="#heroes"><li>Персонажи</li></a></ul></div>');
   $("head").append('<style id="clr">.bighp {position:absolute;top:60px;left:125px;}</style>');
   open = true;
   }
@@ -17,4 +17,8 @@ $("#artwork").on("click",function(){
   $("head #clr").remove();
   open = false;
   }
+});
+
+$("#testing").on("click",function(){
+  $("#test").dialog("open");
 });
